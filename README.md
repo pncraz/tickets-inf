@@ -25,13 +25,15 @@ The runtime is designed for low-latency CPU inference, small memory usage, and s
 
 ## Tasks and Outputs
 
-| Task | Labels | Activation |
-| --- | --- | --- |
-| `department` | `billing`, `tech`, `sales`, `general` | softmax |
-| `sentiment` | `positive`, `neutral`, `negative` | softmax |
-| `lead_intent` | `high`, `medium`, `low` | softmax |
-| `churn_risk` | `high`, `low` | sigmoid |
-| `intent` | `refund`, `delivery_query`, `complaint`, `other` | softmax |
+
+| Task          | Labels                                           | Activation |
+| ------------- | ------------------------------------------------ | ---------- |
+| `department`  | `billing`, `tech`, `sales`, `general`            | softmax    |
+| `sentiment`   | `positive`, `neutral`, `negative`                | softmax    |
+| `lead_intent` | `high`, `medium`, `low`                          | softmax    |
+| `churn_risk`  | `high`, `low`                                    | sigmoid    |
+| `intent`      | `refund`, `delivery_query`, `complaint`, `other` | softmax    |
+
 
 Each head returns:
 
@@ -61,6 +63,8 @@ flowchart LR
     H --> L["Churn risk head\nsigmoid(1)"]
     H --> M["Intent head\nsoftmax(4)"]
 ```
+
+
 
 ### Feature Vector Layout
 
@@ -162,13 +166,15 @@ go run ./cmd/demo -model /tmp/demo_model.json -quantized -text "My delivery is l
 
 ## CLI Flags
 
-| Flag | Description |
-| --- | --- |
-| `-model` | Path to a JSON model file |
-| `-text` | Support ticket text to classify |
-| `-quantized` | Use int8 weights when available, or quantize float32 weights in memory |
-| `-debug` | Print feature debug information and include it in the output |
-| `-dump-demo-model` | Write the built-in demo model JSON and exit |
+
+| Flag               | Description                                                            |
+| ------------------ | ---------------------------------------------------------------------- |
+| `-model`           | Path to a JSON model file                                              |
+| `-text`            | Support ticket text to classify                                        |
+| `-quantized`       | Use int8 weights when available, or quantize float32 weights in memory |
+| `-debug`           | Print feature debug information and include it in the output           |
+| `-dump-demo-model` | Write the built-in demo model JSON and exit                            |
+
 
 ## Benchmarking
 
@@ -176,7 +182,7 @@ Use the benchmark CLI to compare the local classifier against hosted general-pur
 
 ```bash
 go run ./cmd/bench \
-  -local-model /Users/prince/projects/github.com/octate/tickets-training/training/artifacts/model.json
+  -local-model ./training/artifacts/model.json
 ```
 
 Default targets:
@@ -215,7 +221,7 @@ import (
     "log"
     "os"
 
-    "github.com/octate/tickets-inf/inference"
+    "github.com/pncraz/tickets-inf/inference"
 )
 
 func main() {
@@ -243,8 +249,8 @@ import (
     "fmt"
     "log"
 
-    "github.com/octate/tickets-inf/inference"
-    "github.com/octate/tickets-inf/model"
+    "github.com/pncraz/tickets-inf/inference"
+    "github.com/pncraz/tickets-inf/model"
 )
 
 func main() {
@@ -677,3 +683,4 @@ Current tests cover:
 - optional normalized BoW or TF-IDF features
 - model metadata/version block in JSON
 - export/import utilities for common training pipelines
+

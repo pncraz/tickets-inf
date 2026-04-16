@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/octate/tickets-inf/model"
+	"github.com/pncraz/tickets-inf/model"
 )
 
 const systemInstruction = "You are a strict support-ticket classification engine. Choose exactly one label for each field and return only a single JSON object."

@@ -1,8 +1,8 @@
 package model
 
 import (
-	"github.com/octate/tickets-inf/features"
-	"github.com/octate/tickets-inf/quantization"
+	"github.com/pncraz/tickets-inf/features"
+	"github.com/pncraz/tickets-inf/quantization"
 )
 
 type JSONModel struct {

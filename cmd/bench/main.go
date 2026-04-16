@@ -7,8 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/octate/tickets-inf/benchmark"
-	"github.com/octate/tickets-inf/inference"
+	"github.com/pncraz/tickets-inf/benchmark"
+	"github.com/pncraz/tickets-inf/inference"
 )
 
 func main() {

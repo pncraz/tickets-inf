@@ -1,6 +1,6 @@
 package model
 
-import "github.com/octate/tickets-inf/features"
+import "github.com/pncraz/tickets-inf/features"
 
 func NewDemoModel() (*Model, error) {
 	return BuildFromJSONModel(NewDemoJSONModel())

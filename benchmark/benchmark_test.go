@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/octate/tickets-inf/inference"
-	"github.com/octate/tickets-inf/model"
+	"github.com/pncraz/tickets-inf/inference"
+	"github.com/pncraz/tickets-inf/model"
 )
 
 func TestLoadJSONL(t *testing.T) {

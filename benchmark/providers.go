@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/octate/tickets-inf/inference"
-	"github.com/octate/tickets-inf/model"
+	"github.com/pncraz/tickets-inf/inference"
+	"github.com/pncraz/tickets-inf/model"
 )
 
 func ResolveTargets(specs []string, localModelPath string, localConfig inference.Config) ([]Target, model.LabelSet, error) {

@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/octate/tickets-inf/features"
-	"github.com/octate/tickets-inf/model"
-	"github.com/octate/tickets-inf/quantization"
+	"github.com/pncraz/tickets-inf/features"
+	"github.com/pncraz/tickets-inf/model"
+	"github.com/pncraz/tickets-inf/quantization"
 )
 
 func TestPredictFromJSONModel(t *testing.T) {

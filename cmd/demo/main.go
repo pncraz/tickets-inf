@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/octate/tickets-inf/inference"
-	"github.com/octate/tickets-inf/model"
+	"github.com/pncraz/tickets-inf/inference"
+	"github.com/pncraz/tickets-inf/model"
 )
 
 func main() {

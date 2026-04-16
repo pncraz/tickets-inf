@@ -5,9 +5,9 @@ import (
 	"io"
 	"sync/atomic"
 
-	"github.com/octate/tickets-inf/features"
-	"github.com/octate/tickets-inf/model"
-	"github.com/octate/tickets-inf/utils"
+	"github.com/pncraz/tickets-inf/features"
+	"github.com/pncraz/tickets-inf/model"
+	"github.com/pncraz/tickets-inf/utils"
 )
 
 type Config struct {

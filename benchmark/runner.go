@@ -5,7 +5,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/octate/tickets-inf/model"
+	"github.com/pncraz/tickets-inf/model"
 )
 
 func Run(datasetPath string, labels model.LabelSet, examples []Example, targets []Target, includeCases bool) Report {

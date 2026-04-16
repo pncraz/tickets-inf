@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/octate/tickets-inf/model"
+	"github.com/pncraz/tickets-inf/model"
 )
 
 type rawPrediction struct {

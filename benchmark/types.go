@@ -3,7 +3,7 @@ package benchmark
 import (
 	"time"
 
-	"github.com/octate/tickets-inf/model"
+	"github.com/pncraz/tickets-inf/model"
 )
 
 type Example struct {

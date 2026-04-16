@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/octate/tickets-inf/features"
-	"github.com/octate/tickets-inf/quantization"
-	"github.com/octate/tickets-inf/utils"
+	"github.com/pncraz/tickets-inf/features"
+	"github.com/pncraz/tickets-inf/quantization"
+	"github.com/pncraz/tickets-inf/utils"
 )
 
 func LoadFile(path string) (*Model, error) {

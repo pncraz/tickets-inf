@@ -1,3 +1,3 @@
-module github.com/octate/tickets-inf
+module github.com/pncraz/tickets-inf
 
 go 1.25
